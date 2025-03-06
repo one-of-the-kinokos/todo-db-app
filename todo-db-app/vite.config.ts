@@ -7,7 +7,7 @@ import { resolve } from "path";
 // https://vitejs.dev/config/
 export default defineConfig((configObj) => {
   return {
-    base: configObj.mode === "gh-pages" ? "/todo-deb-app" : "/",
+    base: configObj.mode === "gh-pages" ? "/todo-db-app" : "/",
     build: {
       rollupOptions: {
         input: {
