@@ -8,14 +8,6 @@ import { resolve } from "path";
 export default defineConfig((configObj) => {
   return {
     base: configObj.mode === "gh-pages" ? "/todo-db-app" : "/",
-    build: {
-      rollupOptions: {
-        input: {
-          main: resolve(__dirname, "index.html"),
-          404: resolve(__dirname, "404.html"),
-        },
-      },
-    },
     plugins: [
       TanStackRouterVite({
         target: "react",
