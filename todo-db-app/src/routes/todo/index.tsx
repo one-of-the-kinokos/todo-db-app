@@ -37,9 +37,14 @@ function RouteComponent() {
               roundedRight={"none"}
               width={"90%"}
               color={"white"}
+              outlineColor={"purple.100"}
+              borderColor={"purple.100"}
               placeholder={"Input your task."}
               _placeholder={{ color: "whiteAlpha.700" }}
-              _focus={{ outlineColor: "purple.100", borderColor: "purple.100" }}
+              _focus={{
+                outlineColor: "blackAlpha.50",
+                borderColor: "purple.600",
+              }}
             ></Input>
             <Button
               width={"10%"}
