@@ -1,4 +1,3 @@
-import { ErrorFallback } from "@/components/custom/ErrorFallback";
 import { MyText } from "@/components/custom/MyText";
 import { Row } from "@/components/custom/Row";
 import { useTodoPageViewModel } from "@/hooks/viewModels";
@@ -73,6 +72,7 @@ function RouteComponent() {
             </Flex>
             <Spacer />
           </Flex>
+          <Spacer minH={"10px"} maxH={"10px"} />
           {/* Todoリストの描画 */}
           {todoPageViewModel.states.tasksList.map((element) => {
             return (
@@ -87,7 +87,7 @@ function RouteComponent() {
               ></Row>
             );
           })}
-
+          <Spacer minH={"10px"} maxH={"10px"} />
           <Flex
             width={"100%"}
             marginBottom={"20px"}
