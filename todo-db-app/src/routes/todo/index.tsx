@@ -1,7 +1,7 @@
 import { MyText } from "@/components/custom/MyText";
 import { Row } from "@/components/custom/Row";
 import { useTodoPageViewModel } from "@/hooks/viewModels";
-import { Button, Color, Flex, Input, Spacer } from "@chakra-ui/react";
+import { Button, Flex, Input, Spacer } from "@chakra-ui/react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef } from "react";
 
@@ -55,6 +55,7 @@ function RouteComponent() {
               bgColor={"white"}
               roundedLeft={"none"}
               onClick={() => {
+                // ViewModelに対して新規予定の追加を命令する
                 todoPageViewModel.methods.createTaskButtonHandler();
               }}
             >
@@ -80,6 +81,7 @@ function RouteComponent() {
                 id={element.id}
                 value={element.value}
                 deleteFucntion={async () => {
+                  // ViewModelに対して予定の削除処理を命令する
                   await todoPageViewModel.methods.deleteTaskButtonHandler(
                     element.id
                   );
