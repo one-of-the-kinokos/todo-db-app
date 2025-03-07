@@ -31,7 +31,7 @@ if (!rootElement.innerHTML) {
   root.render(
     <RouterProvider
       router={router}
-      basepath={import.meta.env.MODE === "gh-pages" ? "/todo-db-app" : "/"}
+      basepath={import.meta.env.MODE === "gh-pages" ? "/" : "/"}
     />
   );
 }
