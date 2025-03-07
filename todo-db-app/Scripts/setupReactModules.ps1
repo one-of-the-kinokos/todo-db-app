@@ -6,7 +6,17 @@ Write-Host ""
 Write-Host $command -ForegroundColor DarkCyan
 Invoke-Expression $command
 
+$command = "npm install react-error-boundary"
+Write-Host ""
+Write-Host $command -ForegroundColor DarkCyan
+Invoke-Expression $command
+
 $command = "npm install jotai"
+Write-Host ""
+Write-Host $command -ForegroundColor DarkCyan
+Invoke-Expression $command
+
+$command = "npm i dexie"
 Write-Host ""
 Write-Host $command -ForegroundColor DarkCyan
 Invoke-Expression $command

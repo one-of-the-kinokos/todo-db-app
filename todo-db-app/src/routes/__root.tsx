@@ -11,7 +11,9 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <>
+      {/* Chakra UI使用のためのProvider */}
       <Provider>
+        {/* 描画エラーをキャッチしてエラー画面を表示するためのコンポーネント */}
         <ErrorBoundary FallbackComponent={ErrorFallback}>
           <Outlet />
         </ErrorBoundary>

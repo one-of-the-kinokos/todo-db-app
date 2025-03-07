@@ -1,7 +1,6 @@
 import { MyText } from "@/components/custom/MyText";
 import { Flex, Spacer } from "@chakra-ui/react";
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useEffect } from "react";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   component: RouteComponent,
