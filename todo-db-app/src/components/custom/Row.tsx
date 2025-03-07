@@ -23,7 +23,7 @@ function Row(props: { id: number; value: string; deleteFucntion: () => void }) {
           width={"20%"}
           bgColor={"purple.400"}
           onClick={() => {
-            props.deleteFucntion;
+            props.deleteFucntion();
           }}
         >
           <MyText textDecor={"underline"}>DELETE</MyText>
